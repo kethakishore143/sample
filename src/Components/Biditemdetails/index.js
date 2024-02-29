@@ -1,8 +1,9 @@
 import { IoIosBriefcase } from "react-icons/io";
 import { BsTruckFront } from "react-icons/bs";
-import { FaDiceD6, FaUser } from "react-icons/fa";
+import { FaDiceD6, FaUser, FaCircle } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { BiSolidUpArrow } from "react-icons/bi";
+import { IoLocationSharp } from "react-icons/io5";
 
 import "./index.css";
 
@@ -12,29 +13,39 @@ const Biditemdetails = () => (
       <h1 className="bid-heading">
         Bid No: 16515 <span>(Sunder Yadav)</span>
       </h1>
-      <div>
-        <h1 className="bid-heading">
-          Manesar, Gurugram, <span>(Haryana)</span>
-        </h1>
-        <p className="Loading-point">
-          Loading point:
-          <span>
-            Ramchandra Ramniwas oil mill,
-            <br /> Alwar, Rajasthan{" "}
-          </span>
-        </p>
-      </div>
-      <div>
-        <h1 className="bid-heading">
-          Kotputli, <span>(Rajasthan)</span>
-        </h1>
-        <p className="unloading-point">
-          Unloading Point:{" "}
-          <span>
-            Ramchandra Ramniwas oil mill,
-            <br /> Alwar, Rajasthan
-          </span>
-        </p>
+      <div className="bid-location-container">
+        <div className="location-container">
+          <FaCircle className="circle" />
+          <div className="vertical"></div>
+          <IoLocationSharp className="location" />
+        </div>
+        <div>
+          <div>
+            <h1 className="bid-heading">
+              Manesar, Gurugram, <span>(Haryana)</span>
+            </h1>
+            <p className="Loading-point">
+              Loading point:
+              <span>
+                Ramchandra Ramniwas oil mill,
+                <br /> Alwar, Rajasthan
+              </span>
+            </p>
+          </div>
+
+          <div>
+            <h1 className="bid-heading">
+              Kotputli, <span>(Rajasthan)</span>
+            </h1>
+            <p className="unloading-point">
+              Unloading Point:{" "}
+              <span>
+                Ramchandra Ramniwas oil mill,
+                <br /> Alwar, Rajasthan
+              </span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <div>
